@@ -1,0 +1,34 @@
+git init 生成隐藏文件 .git
+
+git add  把一个文件夹提交到暂存区
+
+git add . 把最新修改的文件都提交到暂存区  同：git  add -A
+
+git status  查看当前文件的状态（红色在工作区，绿色在暂存区 看不见证明所有修改都已存到历史区）
+
+git commit -m'描述信息'
+
+git log 	查看历史版本信息
+git reflog 	包含回滚的信息
+
+git reset --hard
+
+git 链接 github
+
+//查看本地仓库和哪些远程仓库保持链接
+git remote -v
+
+//让本地仓库和远程仓库新建一个链接  （origin是随便起的一个连接名，可以改）
+git remote add origin +你的github仓库链接地址
+
+//解除关联
+git remote rm origin
+
+//提交之前最好先拉取
+git pull origin master
+
+//把本地代码提交到远程仓库（需要输入GitHub的用户名密码）
+git push origin master
+
+git 克隆
+//git clone[远程仓库的git地址][别名 可选]
