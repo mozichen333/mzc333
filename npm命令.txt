@@ -1,0 +1,30 @@
+//把模块安装到在当前项目中
+npm install xxx  
+
+// 把模块安装在全局环境中
+npm install xxx -g
+
+// 安装指定版本号的模块
+npm i xxx@1.0.0
+
+//查看某个模块的版本信息  输出到指定的json文件中去
+npm view xxx versions > xxx.version.json
+
+// 初始化当前项目的配置依赖清单
+npm init -y
+
+// 把模块保存在清单生产依赖中
+npm i xxx --save
+
+//把模块保存在清单开发依赖中
+npm i xxx --save-dev
+
+//跑环境，按照清单安装所需的模块
+npm install
+
+//查看全局安装模块的目录
+npm root -g
+
+//卸载安装过得模块
+npm uninstall xxx
+npm uninstall xxx -g
